@@ -1,0 +1,18 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 1rem;
+  font-family: ui-sans-serif, sans-serif;
+  line-height: 1.5;
+}
+
+.centering {
+  display: grid;
+  place-content: center;
+}
