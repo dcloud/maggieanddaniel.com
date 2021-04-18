@@ -1,0 +1,15 @@
+// Grid stuff, just in case
+
+.grid {
+  display: grid;
+}
+
+.grid-3-col {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.centering {
+  display: grid;
+  place-content: center;
+}
+

@@ -1,0 +1,29 @@
+// Lato: Latin glyphs only
+// http://www.latofonts.com/lato-free-fonts/
+@use 'lato';
+@use 'playfair';
+
+// Typography
+$base-size: 1rem;
+$size-ratio: 1.333; // Perfect Fourth
+
+$levels: 5, 4, 3, 2, 1;
+
+$sans-serif: 'LatoLatinWebLight';
+$serif: 'Playfair';
+
+
+$sans-serif-families: $sans-serif, ui-sans-serif, sans-serif;
+$serif-families: $serif, ui-serif, serif;
+
+.sans-serif {
+  font-family: $sans-serif-families;
+}
+
+.serif {
+  font-family: $serif-families;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}

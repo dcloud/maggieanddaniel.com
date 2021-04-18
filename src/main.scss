@@ -1,0 +1,58 @@
+@use 'colors' as *;
+@use 'type';
+@use 'headings';
+
+// Colors
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: type.$base-size;
+  font-family: type.$serif-families;
+  line-height: 1.5;
+  background-color: $background-dark;
+  color: $text-light;
+}
+
+p,
+li,
+h1,
+h2,
+h3,
+h4 {
+  // Help prevent overflow of long words/names/URLs
+  word-break: break-word;
+
+  // Optional, not supported for all languages
+  hyphens: auto;
+}
+
+.card-wrapper {
+  width: min(325px, 96vw);
+  margin: 4vw auto;
+  padding: min(28px, 4vw);
+  outline: 1px solid $white;
+
+}
+
+.card {
+  padding: 3rem 1.75rem;
+  color: $text-dark;
+  background-color: $background-light;
+  > div {
+    margin-bottom: 4.209rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .card-wrapper {
+    width: min(532px, 96vw);
+    margin: min(100px, 10vw) auto auto max(2vw, min(10vw, 100px));
+  }
+}

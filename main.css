@@ -1,3 +1,220 @@
+@font-face {
+  font-family: "LatoLatinWebBlack";
+  src: url("fonts/LatoLatin-Black.woff2") format("woff2"), url("fonts/LatoLatin-Black.woff") format("woff");
+  font-display: auto;
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "LatoLatinWebBlack";
+  src: url("fonts/LatoLatin-BlackItalic.woff2") format("woff2"), url("fonts/LatoLatin-BlackItalic.woff") format("woff");
+  font-display: auto;
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "LatoLatinWeb";
+  src: url("fonts/LatoLatin-Bold.woff2") format("woff2"), url("fonts/LatoLatin-Bold.woff") format("woff");
+  font-display: auto;
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "LatoLatinWeb";
+  src: url("fonts/LatoLatin-BoldItalic.woff2") format("woff2"), url("fonts/LatoLatin-BoldItalic.woff") format("woff");
+  font-display: auto;
+  font-style: italic;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "LatoLatinWebHairline";
+  src: url("fonts/LatoLatin-Hairline.woff2") format("woff2"), url("fonts/LatoLatin-Hairline.woff") format("woff");
+  font-display: auto;
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "LatoLatinWebHairline";
+  src: url("fonts/LatoLatin-HairlineItalic.woff2") format("woff2"), url("fonts/LatoLatin-HairlineItalic.woff") format("woff");
+  font-display: auto;
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "LatoLatinWebHeavy";
+  src: url("fonts/LatoLatin-Heavy.woff2") format("woff2"), url("fonts/LatoLatin-Heavy.woff") format("woff");
+  font-display: auto;
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "LatoLatinWebHeavy";
+  src: url("fonts/LatoLatin-HeavyItalic.woff2") format("woff2"), url("fonts/LatoLatin-HeavyItalic.woff") format("woff");
+  font-display: auto;
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "LatoLatinWeb";
+  src: url("fonts/LatoLatin-Italic.woff2") format("woff2"), url("fonts/LatoLatin-Italic.woff") format("woff");
+  font-display: auto;
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "LatoLatinWebLight";
+  src: url("fonts/LatoLatin-Light.woff2") format("woff2"), url("fonts/LatoLatin-Light.woff") format("woff");
+  font-display: auto;
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "LatoLatinWebLight";
+  src: url("fonts/LatoLatin-LightItalic.woff2") format("woff2"), url("fonts/LatoLatin-LightItalic.woff") format("woff");
+  font-display: auto;
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "LatoLatinWebMedium";
+  src: url("fonts/LatoLatin-Medium.woff2") format("woff2"), url("fonts/LatoLatin-Medium.woff") format("woff");
+  font-display: auto;
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "LatoLatinWebMedium";
+  src: url("fonts/LatoLatin-MediumItalic.woff2") format("woff2"), url("fonts/LatoLatin-MediumItalic.woff") format("woff");
+  font-display: auto;
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "LatoLatinWeb";
+  src: url("fonts/LatoLatin-Regular.woff2") format("woff2"), url("fonts/LatoLatin-Regular.woff") format("woff");
+  font-display: auto;
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "LatoLatinWebSemibold";
+  src: url("fonts/LatoLatin-Semibold.woff2") format("woff2"), url("fonts/LatoLatin-Semibold.woff") format("woff");
+  font-display: auto;
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "LatoLatinWebSemibold";
+  src: url("fonts/LatoLatin-SemiboldItalic.woff2") format("woff2"), url("fonts/LatoLatin-SemiboldItalic.woff") format("woff");
+  font-display: auto;
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "LatoLatinWebThin";
+  src: url("fonts/LatoLatin-Thin.woff2") format("woff2"), url("fonts/LatoLatin-Thin.woff") format("woff");
+  font-display: auto;
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "LatoLatinWebThin";
+  src: url("fonts/LatoLatin-ThinItalic.woff2") format("woff2"), url("fonts/LatoLatin-ThinItalic.woff") format("woff");
+  font-display: auto;
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "Playfair";
+  src: url("fonts/playfairdisplay.woff2") format("woff2"), url("fonts/playfairdisplay.woff") format("woff");
+  /* Modern Browsers */
+  font-display: auto;
+  font-style: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "Playfair";
+  src: url("fonts/playfairdisplay-italic.woff2") format("woff2"), url("fonts/playfairdisplay-italic.woff") format("woff");
+  /* Modern Browsers */
+  font-display: auto;
+  font-style: italic;
+  text-rendering: optimizeLegibility;
+}
+.sans-serif {
+  font-family: "LatoLatinWebLight", ui-sans-serif, sans-serif;
+}
+
+.serif {
+  font-family: "Playfair", ui-serif, serif;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+h5, .h5 {
+  font-family: "Playfair", ui-serif, serif;
+  font-size: 1.333rem;
+  font-weight: 500;
+  line-height: calc(2px + 2ex + 2px);
+  margin-bottom: 0.65em;
+  font-size: min(max(1rem, 4.333vw), 1.333rem);
+}
+
+h4, .h4 {
+  font-family: "Playfair", ui-serif, serif;
+  font-size: 1.776889rem;
+  font-weight: 500;
+  line-height: calc(2px + 2ex + 2px);
+  margin-bottom: 0.65em;
+  font-size: min(max(1.19051563rem, 4.58637337vw), 1.776889rem);
+}
+
+h3, .h3 {
+  font-family: "Playfair", ui-serif, serif;
+  font-size: 2.368593037rem;
+  font-weight: 500;
+  line-height: calc(2px + 2ex + 2px);
+  margin-bottom: 0.65em;
+  font-size: min(max(1.5869573348rem, 4.7816357022vw), 2.368593037rem);
+}
+
+h2, .h2 {
+  font-family: "Playfair", ui-serif, serif;
+  font-size: 3.1573345183rem;
+  font-weight: 500;
+  line-height: calc(2px + 2ex + 2px);
+  margin-bottom: 0.65em;
+  font-size: min(max(2.1154141273rem, 5.041920391vw), 3.1573345183rem);
+}
+
+h1, .h1 {
+  font-family: "Playfair", ui-serif, serif;
+  font-size: 4.2087269129rem;
+  font-weight: 500;
+  line-height: calc(2px + 2ex + 2px);
+  margin-bottom: 0.65em;
+  font-size: min(max(2.1043634565rem, 6.1043634565vw), 4.2087269129rem);
+}
+
 *,
 *::before,
 *::after {
@@ -8,11 +225,43 @@
 
 body {
   font-size: 1rem;
-  font-family: ui-sans-serif, sans-serif;
+  font-family: "Playfair", ui-serif, serif;
   line-height: 1.5;
+  background-color: #47304E;
+  color: #FFF;
 }
 
-.centering {
-  display: grid;
-  place-content: center;
+p,
+li,
+h1,
+h2,
+h3,
+h4 {
+  word-break: break-word;
+  hyphens: auto;
 }
+
+.card-wrapper {
+  width: min(325px, 96vw);
+  margin: 4vw auto;
+  padding: min(28px, 4vw);
+  outline: 1px solid #FFF;
+}
+
+.card {
+  padding: 3rem 1.75rem;
+  color: #000;
+  background-color: #FFF;
+}
+.card > div {
+  margin-bottom: 4.209rem;
+}
+
+@media screen and (min-width: 600px) {
+  .card-wrapper {
+    width: min(532px, 96vw);
+    margin: min(100px, 10vw) auto auto max(2vw, min(10vw, 100px));
+  }
+}
+
+/*# sourceMappingURL=main.css.map */
