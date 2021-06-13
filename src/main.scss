@@ -33,26 +33,10 @@ h4 {
   hyphens: auto;
 }
 
-.card-wrapper {
-  width: min(325px, 96vw);
-  margin: 4vw auto;
-  padding: min(28px, 4vw);
-  outline: 1px solid $white;
-
-}
-
 .card {
-  padding: 3rem 1.75rem;
+  width: min(1000px, 94vw);
+  margin: 6vw auto 0;
+  padding: 3rem 2rem;
   color: $text-dark;
   background-color: $background-light;
-  > div {
-    margin-bottom: 4.209rem;
-  }
-}
-
-@media screen and (min-width: 600px) {
-  .card-wrapper {
-    width: min(532px, 96vw);
-    margin: min(100px, 10vw) auto auto max(2vw, min(10vw, 100px));
-  }
 }
