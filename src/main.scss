@@ -1,6 +1,7 @@
 @use 'colors' as *;
 @use 'type';
 @use 'headings';
+@use 'margin';
 
 // Colors
 
@@ -14,7 +15,7 @@
 
 body {
   font-size: type.$base-size;
-  font-family: type.$serif-families;
+  font-family: type.$sans-serif-families;
   line-height: 1.5;
   background-color: $background-dark;
   color: $text-light;
@@ -39,4 +40,23 @@ h4 {
   padding: 3rem 2rem;
   color: $text-dark;
   background-color: $background-light;
+}
+
+$minColWidth: 19rem;
+
+.featured {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+
+  .details {
+    flex: 2 1 $minColWidth;
+  }
+
+  .visual {
+    flex: 0 2 $minColWidth;
+    img {
+      max-width: 100%;
+    }
+  }
 }

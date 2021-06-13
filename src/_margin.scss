@@ -1,0 +1,27 @@
+@use "sass:string";
+
+$positions: top, right, bottom, left;
+
+@for $i from 0 through 5 {
+  $value: $i * 1rem;
+
+  .margin-#{$i} {
+    margin: $value;
+  }
+
+  @each $pos in $positions {
+    .margin-#{$pos}-#{$i} {
+      #{"margin-" + $pos}: $value;
+    }
+  }
+
+  .margin-x-#{$i} {
+    margin-left: $value;
+    margin-right: $value;
+  }
+
+  .margin-y-#{$i} {
+    margin-top: $value;
+    margin-bottom: $value;
+  }
+}
