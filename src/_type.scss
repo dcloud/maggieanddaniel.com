@@ -27,3 +27,7 @@ $serif-families: $serif, ui-serif, serif;
 .uppercase {
   text-transform: uppercase;
 }
+
+.font-size-small {
+  font-size: $base-size/$size-ratio;
+}

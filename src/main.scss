@@ -1,6 +1,9 @@
 @use 'colors' as *;
 @use 'type';
 @use 'headings';
+@use 'margin';
+
+$minColWidth: 19rem;
 
 // Colors
 
@@ -14,7 +17,7 @@
 
 body {
   font-size: type.$base-size;
-  font-family: type.$serif-families;
+  font-family: type.$sans-serif-families;
   line-height: 1.5;
   background-color: $background-dark;
   color: $text-light;
@@ -33,26 +36,115 @@ h4 {
   hyphens: auto;
 }
 
-.card-wrapper {
-  width: min(325px, 96vw);
-  margin: 4vw auto;
-  padding: min(28px, 4vw);
-  outline: 1px solid $white;
-
+p {
+  margin-bottom: 1.5rem;
 }
 
-.card {
-  padding: 3rem 1.75rem;
-  color: $text-dark;
-  background-color: $background-light;
-  > div {
-    margin-bottom: 4.209rem;
+a {
+  color: $link-text;
+  transition: text-shadow 0.3s;
+
+  &:hover {
+    text-shadow: 0 0 3px $link-shadow;
   }
 }
 
-@media screen and (min-width: 600px) {
-  .card-wrapper {
-    width: min(532px, 96vw);
-    margin: min(100px, 10vw) auto auto max(2vw, min(10vw, 100px));
+address {
+  font-style: normal;
+  margin-bottom: 1.5rem;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+@mixin block {
+  width: min(1000px, 94vw);
+  margin: 6vw auto 0;
+}
+
+.block {
+  @include block;
+}
+
+@mixin box-shadow {
+  box-shadow: 0 2px 4px $box-shadow;
+}
+
+.card {
+  @include block;
+  @include box-shadow;
+  padding: 3rem 2rem;
+  color: $text-dark;
+  background-color: $background-light;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-inline {
+  display: inline-flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+@for $i from 1 to 12 {
+  .flex-#{$i} {
+    flex: $i 1 0%;
+  }
+}
+
+.flex-auto {
+  flex: 0 1 auto;
+}
+
+.flex-minwidth {
+  flex-basis: $minColWidth;
+}
+
+.flex-justify {
+  justify-content: space-between;
+}
+
+.flex-justify-around {
+  justify-content: space-around;
+}
+
+@for $i from 1 to 4 {
+  .gap-#{$i} {
+    gap: 1rem * $i;
+  }
+
+  @supports not (gap: 1rem) {
+    .gap-1 {
+      > *:not(:last-child) {
+        margin-right: 1rem * $i;
+      }
+    }
+  }
+}
+
+.featured {
+  display: flex;
+  flex-wrap: wrap;
+
+  .details {
+    flex: 2 1 $minColWidth;
+  }
+
+  .visual {
+    flex: 0 2 $minColWidth;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+@for $i from 1 through 10 {
+  .height-#{$i} {
+    height: $i * 1rem;
   }
 }
