@@ -437,6 +437,11 @@ a:hover {
   text-shadow: 0 0 3px rgba(71, 48, 78, 0.25);
 }
 
+address {
+  font-style: normal;
+  margin-bottom: 1.5rem;
+}
+
 .list-style-none {
   list-style: none;
 }
