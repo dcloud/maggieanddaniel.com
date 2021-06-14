@@ -1,3 +1,4 @@
+@use 'sass:color';
 
 $maggie-purple: #47304E;
 $maggie-light-purple: #95788f;
@@ -9,3 +10,8 @@ $background-light: $white;
 
 $text-dark: $black;
 $text-light: $white;
+
+$link-text: $maggie-purple;
+$link-shadow: color.adjust($link-text, $alpha: -0.75);
+
+$box-shadow: color.adjust($black, $alpha: -0.75);
